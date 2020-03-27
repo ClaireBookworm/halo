@@ -39,10 +39,65 @@ body * {
 	font-family: Nunito, Arial, Helvetica, sans-serif;
 }
 
+.box-donate-1 {
+	padding: 5rem; 
+	margin: auto
+}
+
+.bkgrd-steel {
+	background-color: $steel;
+}
+.bkgrd-space-purple {
+	background-color: $space-purple;
+}
+.bkgrd-red {
+	background-color: $red;
+}
+.bkgrd-cream {
+	background-color: $cream;
+}
+.people-include {
+	font-family: 'Fredoka One'; 
+	color: $snow; 
+	font-size: 1.5rem;
+}
+.donation-plan {
+	color: $bandark; 
+	font-family: 'Nunito Sans'; 
+	margin: 0 5rem;
+}
+.right-margins {
+	margin-right: 5rem;
+}
+.left-margins {
+	margin-left: 5rem;
+}
+.image-embed {
+	width: 100%; height: auto !important; max-width:960px;-ms-interpolation-mode: bicubic;
+}
+.donor-team {
+	background-color: $red; 
+	width: 50%; 
+	opacity: 75%; 
+	border-radius: 10px; 
+	padding: 10px;
+}
+
 :focus {
 	outline: none;
 }
-
+.team {
+	font-size: 1.3rem;
+	margin-left: 3rem;
+	font-weight: 900;
+	color: $snow;
+}
+.circle-list {
+	list-style-type: circle;
+}
+.bottom-section {
+	background: linear-gradient(to bottom, #212e40,$steel);
+}
 .header-container {
 	> img {
 		width: 200px;
@@ -56,6 +111,28 @@ body * {
 		font-size: 1.5em;
 		font-weight: 300;
 	}
+}
+.donating-box {
+	background-color: $muted; 
+	padding: 3rem 10rem
+}
+.center-align {
+	text-align: center;
+}
+.fSize-1-1 {
+	font-size: 1.1rem;
+}
+.fSize-1-3 {
+	font-size: 1.3rem;
+}
+.fSize-1-5 {
+	font-size: 1.5rem;
+}
+.fSize-3 {
+	font-size: 3rem;
+}
+.padding-5px {
+	padding: 5px;
 }
 
 .large-message {
@@ -106,7 +183,7 @@ body * {
 	box-shadow: 18px 18px 45px $primary, -18px -18px 45px $primary-wash;
 
 	&:hover {
-		background: linear-gradient(145deg, $bandark), $steel;
+		background: linear-gradient(145deg, $bandark, $steel);
 		box-shadow: 10px 10px 35px #ff8c00, -10px -10px 35px $primary;
 	}
 }
@@ -117,10 +194,6 @@ body * {
 	text-align: center;
 }
 
-.dark-mode {
-	color: white;
-	text-align: center;
-}
 
 .column-cube {
 	padding: 20px;
@@ -159,7 +232,7 @@ body * {
 	text-decoration: underline;
 	padding-left: 1.5rem;
 	padding-right: 1rem;
-	text-decoration-color: red;
+	text-decoration-color: $red;
 	color: $snow;
 	background: $steel;
 	border-radius: 10px;
@@ -168,6 +241,7 @@ body * {
 	&:hover {
 		text-decoration-color: $primary;
 		background: $bandark;
+		color: $snow;
 	}
 }
 
@@ -181,6 +255,12 @@ body * {
 	width: auto;
 	text-align: center;
 	margin: 0 5rem;
+}
+.donate-second:hover {
+	color: $snow;
+}
+.text-dark {
+	color: $bandark;
 }
 
 .donateLink {
@@ -247,9 +327,14 @@ body * {
 .columns-hero {
 	@include background-image('../images/columns-hero.svg');
 }
+.works-box {
+	padding: 5rem; 
+	margin:auto
+}
 
 .works-box:hover {
-	box-shadow: 10px 10px 35px $primary-wash, -10px -10px 35px $super-wash;
+	box-shadow: 10px 10px 35px $primary-wash, 
+				-10px -10px 35px $super-wash;
 }
 
 .hero-gray {
@@ -289,4 +374,48 @@ body * {
 
 .text-white {
 	color: $snow;
+}
+
+@media (max-width: 800px) {
+	.box-neu {
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 2px;
+		padding: 5px;
+		box-shadow: none;
+	}
+	.donate-second {
+		width: 90%;
+		margin-top: 10px;
+		margin: 5px;
+		text-align: center;
+	}
+	.box-donate-1 {
+		margin: 5px;
+		padding: 5px;
+	}
+	.box {
+		margin: 1px;
+	}
+	.donating-box {
+		padding: 5px;
+	}
+	.donate {
+		width: 90%;
+		margin-top: 10px;
+		margin: 5px;
+		text-align: center;
+	}
+	.works-box {
+		width: 90%;
+		margin: auto;
+		text-align: center;
+	}
+	.heading-2 {
+		text-align: center;
+		margin: auto;
+	}
+	.lists {
+		margin: 10px;
+	}
 }
