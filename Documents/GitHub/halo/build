@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+echo 'Preparing...'
+
+rm -rf src/css public
+mkdir public
+
+echo 'Compiling SCSS...'
+
+node_modules/.bin/sass src/scss:public/css
+
+echo 'Minifying CSS...'
+
+node_modules/.bin/cssnano public/css/*.css public/css/index.css
+
+echo 'Minifying HTML...'
+
+node_modules/.bin/html-minifier \
+	--collapse-whitespace \
+	--remove-comments \
+	--remove-redundant-attributes \
+	--remove-script-type-attributes \
+	--remove-tag-whitespace \
+	--minify-css true \
+	--minify-js true \
+	src/index.html -o public/index.html
+
+echo 'Copying images...'
+
+cp -r src/images public/images

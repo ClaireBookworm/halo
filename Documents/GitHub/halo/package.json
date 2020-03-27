@@ -1,0 +1,9 @@
+{
+	"name": "halo",
+	"dependencies": {
+		"cssnano-cli": "^1.0.5",
+		"html-minifier": "^4.0.0",
+		"sass": "^1.26.3"
+	},
+	"private": true
+}

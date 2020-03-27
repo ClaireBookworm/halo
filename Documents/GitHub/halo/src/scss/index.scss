@@ -1,0 +1,292 @@
+$lemonade: #ff5a5f;
+$red: #f00;
+$green: #55fa5f;
+$blue: #009a87;
+$alt: #13cfbf;
+$alt-wash: #6ed5fa;
+$onenote: #2e75b5;
+$accent-wash: #befad9;
+$accent: #5cdb95;
+$bandark: #1b1a1f;
+$steel: #273444;
+$slate: #3c4858;
+$muted: #8492a6;
+$smoke: #e0e6ed;
+$snow: #f9fafc;
+$primary: #ffb400;
+$primary-wash: #ffdc89;
+$super-wash: #ffefc9;
+$space-purple: #7e71c6;
+$hyacinth: #564d84;
+$cream: #e3dac9;
+
+@mixin background-image($path) {
+	background-image: url($path);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body,
+body * {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: Nunito, Arial, Helvetica, sans-serif;
+}
+
+:focus {
+	outline: none;
+}
+
+.header-container {
+	> img {
+		width: 200px;
+	}
+
+	> .title.heading {
+		color: $snow;
+	}
+
+	> .subtitle {
+		font-size: 1.5em;
+		font-weight: 300;
+	}
+}
+
+.large-message {
+	background-color: $muted;
+	
+	> .container > .subtitle {
+		color: $snow;
+		font-size: 3rem;
+		font-weight: 900;
+	}
+}
+
+.section.descript {
+	color: white;
+	
+	> .container {
+		padding: 20px;
+		
+		> .second-large-message {
+			font-family: Nunito, Arial, Helvetica, sans-serif;
+			font-size: 3rem;
+			font-weight: 800;
+		}
+		
+		> .description {
+			font-size: 1.2rem;
+			margin: 5rem 0rem 5rem 25%;
+			text-align: right;
+		}
+	}
+}
+
+.heading {
+	font-size: 5rem;
+	font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+}
+
+.heading-2 {
+	font-size: 1.5rem;
+	font-family: 'Nunito', system-ui, Arial, Helvetica, sans-serif;
+	font-weight: 800;
+	margin-right: 5rem;
+}
+
+.box-neu {
+	border-radius: 2rem;
+	background: linear-gradient(145deg, #1b1a1f, #1c2128, $bandark);
+	box-shadow: 18px 18px 45px $primary, -18px -18px 45px $primary-wash;
+
+	&:hover {
+		background: linear-gradient(145deg, $bandark), $steel;
+		box-shadow: 10px 10px 35px #ff8c00, -10px -10px 35px $primary;
+	}
+}
+
+.box-head {
+	font-family: 'Fredoka One';
+	font-size: 2rem;
+	text-align: center;
+}
+
+.dark-mode {
+	color: white;
+	text-align: center;
+}
+
+.column-cube {
+	padding: 20px;
+	font-weight: bold;
+	color: white;
+	margin: 10px;
+	border-radius: 20px;
+
+	&:hover {
+		box-shadow: 8px 8px black;
+	}
+}
+
+.column-title {
+	font-family: 'Fredoka One';
+	font-size: 3rem;
+}
+
+.centerImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding: 50px;
+}
+
+.weblink {
+	color: $alt-wash;
+
+	&:hover {
+		color: $primary-wash;
+	}
+}
+
+.donate {
+	text-decoration: underline;
+	padding-left: 1.5rem;
+	padding-right: 1rem;
+	text-decoration-color: red;
+	color: $snow;
+	background: $steel;
+	border-radius: 10px;
+	margin-right: 28%;
+
+	&:hover {
+		text-decoration-color: $primary;
+		background: $bandark;
+	}
+}
+
+.donate-second {
+	text-decoration: underline;
+	padding-left: 2rem;
+	text-decoration-color: $primary;
+	background: $bandark;
+	color: $snow;
+	border-radius: 10px;
+	width: auto;
+	text-align: center;
+	margin: 0 5rem;
+}
+
+.donateLink {
+	text-decoration: underline;
+	text-decoration-color: $space-purple;
+	color: white;
+	font-weight: 300;
+	font-size: 1.9rem;
+
+	&:hover {
+		text-decoration-color: $onenote;
+		color: $accent-wash;
+		font-weight: 900;
+	}
+}
+
+.bold-text {
+	font-weight: 900;
+}
+
+.custList {
+	list-style-type: circle;
+	padding-left: 1.5rem;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 8px;
+	background: $hyacinth;
+}
+
+.card {
+	border-radius: 0.5rem;
+	border: none;
+
+	&:first-child {
+		border-radius: calc(0.5rem - 1px) calc(0.5rem - 1px) 0 0;
+	}
+}
+
+.card-header {
+	font-size: 0.6875rem;
+	color: #273654;
+	background-color: #f6f6f4;
+	padding: 1rem 1.25rem 0.8rem;
+	border-bottom: 1px solid #eee;
+}
+
+.card-footer {
+	background-color: #f6f6f4;
+	border-top: 1px solid #eee;
+
+	&:last-child {
+		border-radius: 0 0 calc(0.5rem - 1px) calc(0.5rem - 1px);
+	}
+}
+
+.lineHeight {
+	line-height: 2;
+}
+
+.descript {
+	@include background-image('../images/head-hero.svg');
+}
+
+.columns-hero {
+	@include background-image('../images/columns-hero.svg');
+}
+
+.works-box:hover {
+	box-shadow: 10px 10px 35px $primary-wash, -10px -10px 35px $super-wash;
+}
+
+.hero-gray {
+	@include background-image('../images/hero-background.svg');
+}
+
+.info-hero {
+	@include background-image('../images/info-hero.svg');
+}
+
+.button-hover {
+	font-family: 'Nunito Sans';
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.button-hover:hover {
+	box-shadow: 8px 8px $steel;
+}
+
+.secondList {
+	font-family: 'Nunito Sans';
+}
+
+.secondList li {
+	color: $bandark;
+	font-weight: bold;
+	font-size: 1.2rem;
+	padding-left: 5px;
+}
+
+.contact {
+	padding: 5px;
+	color: $snow;
+	font-size: 1.1rem;
+}
+
+.text-white {
+	color: $snow;
+}
