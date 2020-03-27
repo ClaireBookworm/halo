@@ -72,13 +72,10 @@ body * {
 .left-margins {
 	margin-left: 5rem;
 }
-.image-embed {
-	width: 100%; height: auto !important; max-width:960px;-ms-interpolation-mode: bicubic;
-}
 .donor-team {
 	background-color: $red; 
 	width: 50%; 
-	opacity: 75%; 
+	opacity: 0.8; 
 	border-radius: 10px; 
 	padding: 10px;
 }
@@ -216,8 +213,10 @@ body * {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
+	// width: 50%;
 	padding: 50px;
+	max-width: 960px;
+	-ms-interpolation-mode: bicubic;
 }
 
 .weblink {
@@ -344,15 +343,26 @@ body * {
 .info-hero {
 	@include background-image('../images/info-hero.svg');
 }
-
 .button-hover {
 	font-family: 'Nunito Sans';
-	font-size: 1.2em;
-	font-weight: bold;
+	font-size: 1.5em;
+	font-weight: 700;
+	border-radius: 8px;
+	background-color: $red;
+	color: $snow;
+	border: 0;
 }
 
 .button-hover:hover {
-	box-shadow: 8px 8px $steel;
+	box-shadow: 5px 5px 20px $primary-wash, 
+				-5px -5px 20px $accent;
+	font-size: 1.6em;
+	border-radius: 10px;
+	transform: rotate(-10deg) translateX(20px);
+	background-color: $lemonade;
+	font-weight: 900;
+
+
 }
 
 .secondList {
@@ -376,7 +386,11 @@ body * {
 	color: $snow;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) {	
+	.heading {
+		font-size: 4rem;
+	}
+	// donation box
 	.box-neu {
 		margin-left: 0;
 		margin-right: 0;
@@ -384,6 +398,7 @@ body * {
 		padding: 5px;
 		box-shadow: none;
 	}
+
 	.donate-second {
 		width: 90%;
 		margin-top: 10px;
@@ -395,16 +410,33 @@ body * {
 		padding: 5px;
 	}
 	.box {
-		margin: 1px;
+		margin: 0px;
+		width: 100vw;
 	}
 	.donating-box {
-		padding: 5px;
+		padding: 0px;
+		margin: 0;
 	}
 	.donate {
-		width: 90%;
+		// width: 100vw;
+		margin: 0;
+		padding: 0px;
 		margin-top: 10px;
-		margin: 5px;
 		text-align: center;
+	}
+	.donateLink {
+		margin-left: 5px;
+	}
+	// team summary
+	.donor-team {
+		width: 60%;
+		margin: 10px;
+	}
+	.donor-team > p {
+		font-size: 1.1 rem;
+	}
+	.donor-team > ul {
+		font-size: 1rem;
 	}
 	.works-box {
 		width: 90%;
@@ -418,4 +450,10 @@ body * {
 	.lists {
 		margin: 10px;
 	}
+}
+
+
+// sponsors
+.sponsors img {
+	margin: 2rem;
 }

@@ -3,14 +3,39 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1925.1 1090.1" style="enable-background:new 0 0 1925.1 1090.1;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#3C4858;}
-	.st1{fill:#FF0000;}
-	.st2{fill:#8492A6;stroke:#8492A6;stroke-width:3;stroke-miterlimit:10;}
+	.st0{fill:#1B1A1F;}
+	.st1{fill:#8492A6;}
+	.st2{fill:#9B9B9B;}
+	.st3{fill:url(#SVGID_1_);}
+	.st4{fill:#919191;fill-opacity:0.8;}
+	.st5{fill:#1B1A1F;fill-opacity:0.9;}
+	.st6{fill:#9C9C9C;fill-opacity:0.7;}
+	.st7{fill:#070707;fill-opacity:0.5;}
+	.st8{fill:#969696;fill-opacity:0.3;}
+	.st9{fill:#8492A6;fill-opacity:0.5;}
+	.st10{fill:#FF0000;}
+	.st11{fill:#919191;}
+	.st12{fill:#C4C4C4;}
+	.st13{fill:#070707;}
 </style>
-<rect class="st0" width="1922" height="1090.1"/>
-<path class="st1" d="M1922.5,935c0.3-43.8,0.7-87.7,1-131.5l-2-801l-1239,1c147.7,47.1,304.9,125.1,341,259
-	c55.1,204.4-202.8,357.5-158,571c31.5,150.3,224.2,233.5,379,244c194.4,13.1,254.6-232.9,415-225c115.3,5.7,204.7,123.6,264,228
-	C1923.2,1032,1922.8,983.5,1922.5,935z"/>
-<path class="st2" d="M1.5,686.5c89.8,164,180.3,217.8,255,230c116.1,19,213.8-59.2,261-15c34.9,32.6,18,109.4-7,179H2.5L1.5,686.5z"
-	/>
+<path class="st0" d="M1189.4,1171.8"/>
+<path class="st1" d="M-55.6-177.2"/>
+<rect x="1.5" y="1.1" class="st2" width="1922" height="1087.9"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="963.325" y1="1088.8958" x2="963.325" y2="1.0058" gradientTransform="matrix(1 0 0 -1 0 1090)">
+	<stop  offset="0" style="stop-color:#000000"/>
+	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+</linearGradient>
+<rect x="1.5" y="1.1" class="st3" width="1923.6" height="1087.9"/>
+<path class="st4" d="M785.8,634.4C1165.6,425.3,1545.3,216.2,1925.1,7v1083C1545.3,938.2,1165.6,786.3,785.8,634.4z"/>
+<path class="st5" d="M188,1089L794.1,0H0V1089H188z"/>
+<path class="st6" d="M785.8,634.4C530.1,423,274.4,211.5,18.7,0h1904.9v226.3C1544.3,362.4,1165,498.4,785.8,634.4z"/>
+<path class="st7" d="M1922.7,908.2c-469.3-166-938.6-331.9-1407.9-497.9C343.7,523.6,172.6,636.8,1.5,750.1v340h1921.1V908.2z"/>
+<path class="st8" d="M785.8,634.4c378.1,80.1,756.2,160.2,1134.3,240.3V1089H527.6C613.7,937.5,699.7,786,785.8,634.4z"/>
+<path class="st9" d="M1347.8,1089c-187.4-151.5-374.7-303-562.1-454.5c4.7,0.7,9.4,1.4,14.2,2.1
+	c370.9,55.7,746.2,135.5,1125.1,242.4c0,70,0,140,0,210.1C1732.7,1089,1540.3,1089,1347.8,1089z"/>
+<path class="st10" d="M1636.3,518l-37.8-21.8c-135.7-74.7-309-27-387.1,106.4c-75,128.1-35.3,289.8,90.4,368.7l521.2,306.1
+	l319.7-513.3c78-133.5,31.1-302.1-104.7-376.6c-130.3-71.5-296.4-30.6-378.5,93.3C1659.5,480.8,1636.3,518,1636.3,518z"/>
+<path class="st11" d="M1996.7,315.2"/>
+<path class="st12" d="M2362.7,698.3"/>
+<path class="st13" d="M-1094.4-38.4"/>
 </svg>
