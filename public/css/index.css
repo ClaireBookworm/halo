@@ -10,7 +10,7 @@ body * {
 }
 
 .box-donate-1 {
-  padding: 5rem;
+  padding: 3rem;
   margin: auto;
 }
 
@@ -51,7 +51,7 @@ body * {
 }
 
 .donor-team {
-  background-color: #f00;
+  background-color: #5cdb95;
   width: 50%;
   opacity: 0.8;
   border-radius: 10px;
